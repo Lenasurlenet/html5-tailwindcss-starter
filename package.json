@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "TAILWIND_MODE=watch postcss tailwind.css -o ./public/styles.css --watch",
-    "prod": "NODE_ENV=production postcss tailwind.css -o ./public/styles.css"
+    "dev": "NODE_ENV=development postcss tailwind.css -o ./public/styles.css -w"
   },
   "license": "MIT",
   "devDependencies": {
@@ -12,8 +11,5 @@
     "cssnano": "^5.0.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.4"
-  },
-  "dependencies": {
-    "alpinejs": "^3.2.1"
   }
 }
